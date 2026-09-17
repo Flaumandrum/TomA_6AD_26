@@ -47,10 +47,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Deelnemer.cs" />
-    <Compile Include="FrmInschrijven.cs">
+    <Compile Include="GUI\FrmOpzoeken.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmInschrijven.Designer.cs">
+    <Compile Include="GUI\FrmOpzoeken.Designer.cs">
+      <DependentUpon>FrmOpzoeken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmBewerken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmBewerken.Designer.cs">
+      <DependentUpon>FrmBewerken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmInschrijven.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmInschrijven.Designer.cs">
       <DependentUpon>FrmInschrijven.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\FrmStart.cs">
@@ -61,7 +73,13 @@
     </Compile>
     <Compile Include="Business\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmInschrijven.resx">
+    <EmbeddedResource Include="GUI\FrmOpzoeken.resx">
+      <DependentUpon>FrmOpzoeken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmBewerken.resx">
+      <DependentUpon>FrmBewerken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmInschrijven.resx">
       <DependentUpon>FrmInschrijven.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FrmStart.resx">
